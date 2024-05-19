@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/pelisphas.ico" />
+
+</head>
+
+<body>
+    <header class="heading">
+        <h1><a href="index.html">PELISFHAS</a></h1>
+    </header>
+    <div class="contenedor">
+        <form action="" class="formulario" id="formulario">
+
+
+            <!-- Grupo: Nombre -->
+            <div class="formulario_grupo" id="grupo_nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener
+                    numeros,
+                    letras y guion bajo.</p>
+            </div>
+
+            <!--selected de calidad de pelicula -->
+            <div class="formulario_grupo" id="grupo_select">
+                <label for="select" class="formulario__label">Elegi la calidad de la pelicula a descargar</label>
+                <div class="formulario__grupo-input">
+                    <select name="select" id="select" class="formulario__input">
+                        <option value="opcion1">1440p (2K): 2560 × 1440.</option>
+                        <option value="opcion2">1080p (HD): 1920 × 1080.</option>
+                        <option value="opcion3">1080p (HD): 1920 × 1080.</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Grupo: Teléfono -->
+            <div class="formulario_grupo" id="grupo_telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.
+                </p>
+            </div>
+
+
+
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario_grupo" id="grupo_correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo"
+                        placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+                    guion
+                    bajo.</p>
+            </div>
+
+            <!-- Grupo: Contraseña -->
+            <div class="formulario_grupo" id="grupo_password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+            </div>
+
+            <!-- Grupo: Contraseña 2 -->
+            <div class="formulario_grupo" id="grupo_password2">
+                <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+
+
+
+
+
+
+            <!-- Grupo: Terminos y Condiciones -->
+            <div class="formulario_grupo" id="grupo_terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los Terminos y Condiciones
+                </label>
+            </div>
+
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                    correctamente.
+                </p>
+            </div>
+
+            <div class="formulario_grupo formulario_grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>
